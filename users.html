@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+<div id="de"></div>
+<textarea id="area"></textarea>
+<input type="submit" onclick="post()" >
+<script>
+    function post(){
+    var element = document.createElement("p")
+
+    var area = document.getElementById("area").value
+
+    var textnode = document.createTextNode(area);
+    element.appendChild(textnode);
+
+    document.getElementById("de").appendChild(element);
+    }
+</script>
+</body>
